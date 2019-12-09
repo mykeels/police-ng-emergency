@@ -3,7 +3,7 @@ const path = require('path');
 
 const { states } = require('./emergency-contacts.json');
 
-console.log(states.map(({ state }) => `- [${state.toUpperCase()}](./vcf/${state}.vcf)`).join('\n'));
+console.log(states.map(({ state }) => `- [${state.toUpperCase()}](https://raw.githubusercontent.com/mykeels/police-ng-emergency/master/vcf/${state}.vcf)`).join('\n'));
 
 // const contacts = states.map(({ state, phones }) => {
 //     return {
