@@ -43,6 +43,15 @@ states.map(({ state, phones, areas = [], commandControlRooms = [] }) => {
   const stateVCFs = [stateVCF]
   countryVCFs.push(stateVCF);
 
+  commandControlRooms.map(command => {
+    const commandVCF = createVCF(command.name, `${command.name}, ${state.toUpperCase()}`, [command.phone]);
+
+    createDirAndFile(
+      ['vcf', 'states', state, command.name].map(hyphenate),
+      commandVCF
+    );
+  })
+
   areas.map((area) => {
     const areaVCF = createVCF(area.name, `${area.name}, ${state.toUpperCase()}`, [area.phone]);
     const areaVCFs = [areaVCF];
