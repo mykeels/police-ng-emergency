@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const states = require('./lagos.json');
+const states = require('./emergency-contacts.json');
 
-const contacts = ({ state, phones, areas, commandControlRooms }) => {
+const contacts = ({ state, phones, areas = {}, commandControlRooms = {} }) => {
   const main = `BEGIN:VCARD
 BDAY;VALUE=DATE:1960-10-01
 VERSION:3.0
