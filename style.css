@@ -1,6 +1,6 @@
 @media (max-width: 600px) {
   .p-5 {
-    padding: 1rem !important;
+    padding: 1rem 0 !important;
   }
 
   .list-group-item {
