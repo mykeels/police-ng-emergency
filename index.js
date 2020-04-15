@@ -1,80 +1,94 @@
 const fs = require('fs');
 const path = require('path');
 
-const states = require('./emergency-contacts.json');
+const { states } = require('./emergency-contacts.json');
 
-const contacts = ({ state, phones, areas = {}, commandControlRooms = {} }) => {
-  const main = `BEGIN:VCARD
-BDAY;VALUE=DATE:1960-10-01
+const countryVCFs = [];
+const INDEPENDENCE_DATE = '1960-01-01'
+
+const createVCF = (name, fullName, phones = [])  => {
+  return `BEGIN:VCARD
+BDAY;VALUE=DATE:${INDEPENDENCE_DATE}
 VERSION:3.0
-N:${state};Police;NG
-FN:${state} Police NG
+N:${name};Police;NG
+FN:${fullName} Police NG
 ORG:Police NG
 ${phones.map(phone => `TEL;TYPE=WORK,MSG:${phone}`).join('\n')}
 END:VCARD`;
+}
 
-  const contactResolver = ({ name, phone }) => {
-    content = `BEGIN:VCARD
-BDAY;VALUE=DATE:1960-10-01
-VERSION:3.0
-N:${name};Police;NG
-FN:${(name, state)} Police NG
-ORG:Police NG
-TEL;TYPE=WORK,MSG:${phone}
-END:VCARD`;
+const createDirectory = (name) =>  {
+  fs.mkdirSync(name, {
+    recursive: true
+  })
+}
 
-    fs.writeFileSync(path.resolve(`./${name.toLowerCase()}.vcf`), content, {
-      encoding: 'utf8',
+const createFile = (name, content) => {
+  console.log('creating', name);
+  fs.writeFileSync(path.resolve(`./${name}.vcf`), content, {
+    encoding: 'utf8',
+  });
+}
+
+const createDirAndFile = (subpaths, content) => {
+  const dirSubPaths = subpaths.slice(0, -1);
+  createDirectory(dirSubPaths.join('/'));
+  createFile(subpaths.join('/'), content);
+}
+
+const hyphenate = name => name.toLowerCase().replace(/ /g, '-').replace(/^commander\-\'?\w\'?-/g, '');
+
+states.map(({ state, phones, areas = [], commandControlRooms = [] }) => {
+  const stateVCF = createVCF(state, state, phones);
+  const stateVCFs = [stateVCF]
+  countryVCFs.push(stateVCF);
+
+  commandControlRooms.map(command => {
+    const commandVCF = createVCF(command.name, `${command.name}, ${state.toUpperCase()}`, [command.phone]);
+
+    createDirAndFile(
+      ['vcf', 'states', state, command.name].map(hyphenate),
+      commandVCF
+    );
+  })
+
+  areas.map((area) => {
+    const areaVCF = createVCF(area.name, `${area.name}, ${state.toUpperCase()}`, [area.phone]);
+    const areaVCFs = [areaVCF];
+
+    stateVCFs.push(areaVCF);
+    countryVCFs.push(areaVCF);
+
+    area.divisions.map(division => {
+      const divisionVCF = createVCF(
+        division.name, 
+        `${division.name}, ${area.name}, ${state.toUpperCase()}`, 
+        [division.phone]
+      );
+
+      areaVCFs.push(divisionVCF);
+      stateVCFs.push(divisionVCF);
+      countryVCFs.push(divisionVCF);
+
+      createDirAndFile(
+        ['vcf', 'states', state, area.name, division.name].map(hyphenate),
+        divisionVCF
+      );
     });
-  };
 
-  const area = areas.map(area => contactResolver(area));
+    createDirAndFile(
+      ['vcf', 'states', state, area.name].map(hyphenate),
+      areaVCFs.join('\n')
+    );
+  });
 
-  const divisions = areas.map(({ divisions }) =>
-    divisions.map(division => contactResolver(division))
+  createDirAndFile(
+    ['vcf', 'states', state].map(hyphenate),
+    stateVCFs.join('\n')
   );
+});
 
-  const commandControl = commandControlRooms.map(room => contactResolver(room));
-
-  return {
-    main,
-    area,
-    divisions,
-    commandControl,
-  };
-};
-
-// console.log(
-//   states
-//     .map(
-//       ({ state }) =>
-//         `- [${state.toUpperCase()}](https://raw.githubusercontent.com/mykeels/police-ng-emergency/master/vcf/${state}.vcf)`
-//     )
-//     .join('\n')
-// );
-
-// const contacts = states.map(({ state, phones }) => {
-//     return {
-//         state,
-// content: `BEGIN:VCARD
-// BDAY;VALUE=DATE:1960-10-01
-// VERSION:3.0
-// N:${state};Police;NG
-// FN:${state} Police NG
-// ORG:Police NG
-// ${phones.map(phone => `TEL;TYPE=WORK,MSG:${phone}`).join('\n')}
-// END:VCARD`;
-//     }
-// });
-
-// for (let contact of contacts) {
-//   fs.writeFileSync(path.resolve(`./${contact.state}.vcf`), contact.content, {
-//     encoding: 'utf8',
-//   });
-// }
-
-// fs.writeFileSync(
-//   path.resolve(`./lagos-new.vcf`),
-//   final.area.map(contact => contact).join('\n'),
-//   { encoding: 'utf8' }
-// );
+createDirAndFile(
+  ['vcf', 'nigeria'].map(hyphenate),
+  countryVCFs.join('\n')
+);
