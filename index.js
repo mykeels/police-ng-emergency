@@ -13,8 +13,8 @@ ORG:Police NG
 ${phones.map(phone => `TEL;TYPE=WORK,MSG:${phone}`).join('\n')}
 END:VCARD`;
 
-  const contactResolver = ({ name, phone }) =>
-    `BEGIN:VCARD
+  const contactResolver = ({ name, phone }) => {
+    content = `BEGIN:VCARD
 BDAY;VALUE=DATE:1960-10-01
 VERSION:3.0
 N:${name};Police;NG
@@ -22,6 +22,11 @@ FN:${(name, state)} Police NG
 ORG:Police NG
 TEL;TYPE=WORK,MSG:${phone}
 END:VCARD`;
+
+    fs.writeFileSync(path.resolve(`./${name.toLowerCase()}.vcf`), content, {
+      encoding: 'utf8',
+    });
+  };
 
   const area = areas.map(area => contactResolver(area));
 
@@ -40,7 +45,6 @@ END:VCARD`;
 };
 
 const final = contacts(states);
-console.log(final);
 
 // console.log(
 //   states
@@ -71,8 +75,8 @@ console.log(final);
 //   });
 // }
 
-fs.writeFileSync(
-  path.resolve(`./lagos-new.vcf`),
-  final.area.map(contact => contact).join('\n'),
-  { encoding: 'utf8' }
-);
+// fs.writeFileSync(
+//   path.resolve(`./lagos-new.vcf`),
+//   final.area.map(contact => contact).join('\n'),
+//   { encoding: 'utf8' }
+// );
