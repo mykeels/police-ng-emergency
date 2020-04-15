@@ -44,8 +44,6 @@ END:VCARD`;
   };
 };
 
-const final = contacts(states);
-
 // console.log(
 //   states
 //     .map(
