@@ -1,266 +1,672 @@
 {
-    "states": [
-       {
-          "state": "abia",
-          "phones": [
-             "0803541540",
-             "08079210003",
-             "08079210004",
-             "08079210005"
+  "states": [
+    {
+      "state": "abia",
+      "phones": ["0803541540", "08079210003", "08079210004", "08079210005"]
+    },
+    {
+      "state": "adamawa",
+      "phones": ["08089671313"]
+    },
+    {
+      "state": "akwa-ibom",
+      "phones": ["08039213071", "08020913810"]
+    },
+    {
+      "state": "anambra",
+      "phones": ["07039194332", "08024922772", "08075390511", "08182951257"]
+    },
+    {
+      "state": "bauchi",
+      "phones": ["08151849417", "08127162434", "08084763669", "08073794920"]
+    },
+    {
+      "state": "bayelsa",
+      "phones": ["07034578208"]
+    },
+    {
+      "state": "benue",
+      "phones": ["08066006475", "08053039936", "07075390977"]
+    },
+    {
+      "state": "borno",
+      "phones": ["08068075581", "08036071667", "08123823322"]
+    },
+    {
+      "state": "cross-river",
+      "phones": ["08133568456", "07053355415"]
+    },
+    {
+      "state": "delta",
+      "phones": ["08036684974"]
+    },
+    {
+      "state": "ebonyi",
+      "phones": ["08068075581", "08036971667", "08123823322"]
+    },
+    {
+      "state": "edo",
+      "phones": ["08037646272", "08077773721", "08067551618"]
+    },
+    {
+      "state": "ekiti",
+      "phones": ["08062335577", "07089310359"]
+    },
+    {
+      "state": "enugu",
+      "phones": ["08032003702", "08075390883", "08086671202"]
+    },
+    {
+      "state": "imo",
+      "phones": ["08034773600", "08037037283"]
+    },
+    {
+      "state": "jigawa",
+      "phones": ["08075391069", "07089846285", "08123821598"]
+    },
+    {
+      "state": "kaduna",
+      "phones": ["08123822284"]
+    },
+    {
+      "state": "kano",
+      "phones": ["08032419754", "08123821575", "08064977004", "08064977005"]
+    },
+    {
+      "state": "katsina",
+      "phones": ["08075391255", "08075391250"]
+    },
+    {
+      "state": "kebbi",
+      "phones": ["08038797644", "08075391307"]
+    },
+    {
+      "state": "kogi",
+      "phones": ["08075391335", "07038329084"]
+    },
+    {
+      "state": "kwara",
+      "phones": ["07032069501", "08125275046"]
+    },
+    {
+      "state": "lagos",
+      "phones": ["07055462708", "08035963919"],
+      "areas": [
+        {
+          "name": "COMMANDER 'A' LION-BUILDING",
+          "phone": "09010511296",
+          "divisions": [
+            {
+              "name": "VICTORIA ISLAND",
+              "phone": "09010511297"
+            },
+            {
+              "name": "DOLPHIN, ESTATE",
+              "phone": "09010511298"
+            },
+            {
+              "name": "IKOYI",
+              "phone": "09010511299"
+            },
+            {
+              "name": "ONIKAN",
+              "phone": "09010511300"
+            },
+            {
+              "name": "ADENIJI-ADELE",
+              "phone": "09010511301"
+            },
+            {
+              "name": "EBUTE-ERO",
+              "phone": "09010511302"
+            },
+            {
+              "name": "LION-BUILDING",
+              "phone": "09010511303"
+            }
           ]
-       },
-       {
-          "state": "adamawa",
-          "phones": [
-             "08089671313"
+        },
+        {
+          "name": "COMMANDER 'B' APAPA",
+          "phone": "09010511304",
+          "divisions": [
+            {
+              "name": "TRINITY",
+              "phone": "09010511305"
+            },
+            {
+              "name": "LAYENI",
+              "phone": "09010511306"
+            },
+            {
+              "name": "KIRIKIRI",
+              "phone": "09010511307"
+            },
+            {
+              "name": "AJEGUNLE",
+              "phone": "09010511308"
+            },
+            {
+              "name": "IJORA-BADIA",
+              "phone": "09010511309"
+            },
+            {
+              "name": "APAPA",
+              "phone": "09010511310"
+            },
+            {
+              "name": "AMUKOKO",
+              "phone": "09010511311"
+            },
+            {
+              "name": "TOLU",
+              "phone": "09010511312"
+            }
           ]
-       },
-       {
-          "state": "akwa-ibom",
-          "phones": [
-             "08039213071",
-             "08020913810"
+        },
+        {
+          "name": "COMMANDER 'C' SURULERE",
+          "phone": "09010511313",
+          "divisions": [
+            {
+              "name": "IPONRI",
+              "phone": "09010511314"
+            },
+            {
+              "name": "AGUDA",
+              "phone": "09010511315"
+            },
+            {
+              "name": "SURULERE",
+              "phone": "09010511316"
+            },
+            {
+              "name": "ORILE",
+              "phone": "09010511317"
+            },
+            {
+              "name": "BODE-THOMAS",
+              "phone": "09010511318"
+            },
+            {
+              "name": "SABO",
+              "phone": "09010511319"
+            },
+            {
+              "name": "YABA",
+              "phone": "09010511320"
+            },
+            {
+              "name": "DENTON",
+              "phone": "09010511321"
+            }
           ]
-       },
-       {
-          "state": "anambra",
-          "phones": [
-             "07039194332",
-             "08024922772",
-             "08075390511",
-             "08182951257"
+        },
+        {
+          "name": "COMMANDER 'D' MUSHIN",
+          "phone": "09010511323",
+          "divisions": [
+            {
+              "name": "ASWANI",
+              "phone": "09010511324"
+            },
+            {
+              "name": "MUSHIN",
+              "phone": "09010511325"
+            },
+            {
+              "name": "ISOLO",
+              "phone": "09010511327"
+            },
+            {
+              "name": "AJAO-ESTATE",
+              "phone": "09010511328"
+            },
+            {
+              "name": "AGO OKOTA",
+              "phone": "09010511329"
+            },
+            {
+              "name": "EJIGBO",
+              "phone": "09010511330"
+            },
+            {
+              "name": "ITIRE",
+              "phone": "09010511332"
+            },
+            {
+              "name": "IJESHATEDO",
+              "phone": "09010511333"
+            },
+            {
+              "name": "ILASAMAJA",
+              "phone": "09010511334"
+            }
           ]
-       },
-       {
-          "state": "bauchi",
-          "phones": [
-             "08151849417",
-             "08127162434",
-             "08084763669",
-             "08073794920"
+        },
+        {
+          "name": "COMMANDER 'E FESTAC",
+          "phone": "09010511335",
+          "divisions": [
+            {
+              "name": "OJO",
+              "phone": "09010511336"
+            },
+            {
+              "name": "TRADE FAIR",
+              "phone": "09010511337"
+            },
+            {
+              "name": "OKOKOMIAKO",
+              "phone": "09010511338"
+            },
+            {
+              "name": "SATELLITE",
+              "phone": "09010511339"
+            },
+            {
+              "name": "ONIREKE",
+              "phone": "09010511340"
+            },
+            {
+              "name": "FESTAC",
+              "phone": "09010511341"
+            },
+            {
+              "name": "IBA",
+              "phone": "09010511342"
+            }
           ]
-       },
-       {
-          "state": "bayelsa",
-          "phones": [
-             "07034578208"
+        },
+        {
+          "name": "COMMANDER 'F' IKEJA",
+          "phone": "09010511343",
+          "divisions": [
+            {
+              "name": "IKEJA",
+              "phone": "09010511344"
+            },
+            {
+              "name": "MAKINDE",
+              "phone": "09010511345"
+            },
+            {
+              "name": "ALAUSA",
+              "phone": "09010511346"
+            },
+            {
+              "name": "AKINPELU",
+              "phone": "09010511347"
+            },
+            {
+              "name": "OJODU",
+              "phone": "09010511348"
+            },
+            {
+              "name": "ILUPEJU",
+              "phone": "09010511349"
+            },
+            {
+              "name": "MOSAFEJO",
+              "phone": "09010511350"
+            },
+            {
+              "name": "MAN-CENTRE",
+              "phone": "09010511351"
+            },
+            {
+              "name": "SHOGUNLE",
+              "phone": "09010511352"
+            }
           ]
-       },
-       {
-          "state": "benue",
-          "phones": [
-             "08066006475",
-             "08053039936",
-             "07075390977"
+        },
+        {
+          "name": "COMMANDER 'G' OGBA",
+          "phone": "09010511353",
+          "divisions": [
+            {
+              "name": "ALAKUKO",
+              "phone": "09010511354"
+            },
+            {
+              "name": "PEN-CINEMA",
+              "phone": "09010511355"
+            },
+            {
+              "name": "DOPEMU",
+              "phone": "09010511356"
+            },
+            {
+              "name": "ABATTIOR",
+              "phone": "09010511357"
+            },
+            {
+              "name": "IJAYE-OJOKORO",
+              "phone": "09010511358"
+            },
+            {
+              "name": "ELERE",
+              "phone": "09010511359"
+            },
+            {
+              "name": "ISOKOKO",
+              "phone": "09010511360"
+            }
           ]
-       },
-       {
-          "state": "borno",
-          "phones": [
-             "08068075581",
-             "08036071667",
-             "08123823322"
+        },
+        {
+          "name": "COMMANDER 'H' OGUDU",
+          "phone": "09010511363",
+          "divisions": [
+            {
+              "name": "SHOMOLU",
+              "phone": "09010511364"
+            },
+            {
+              "name": "OGUDU",
+              "phone": "09010511365"
+            },
+            {
+              "name": "KETU",
+              "phone": "09010511366"
+            },
+            {
+              "name": "ISHERI",
+              "phone": "09010511367"
+            },
+            {
+              "name": "OWOROSOKI",
+              "phone": "09010511368"
+            },
+            {
+              "name": "ONIPANU",
+              "phone": "09010511369"
+            },
+            {
+              "name": "IFAKO",
+              "phone": "09010511370"
+            },
+            {
+              "name": "ANTHONY",
+              "phone": "09010511371"
+            },
+            {
+              "name": "BARIGA",
+              "phone": "09010511372"
+            },
+            {
+              "name": "ALAPERE",
+              "phone": "09010511373"
+            },
+            {
+              "name": "ALADE",
+              "phone": "09010511374"
+            }
           ]
-       },
-       {
-          "state": "cross-river",
-          "phones": [
-             "08133568456",
-             "07053355415"
+        },
+        {
+          "name": "COMMANDER 'J' ELEMORO",
+          "phone": "09010511375",
+          "divisions": [
+            {
+              "name": "MAROKO",
+              "phone": "09010511376"
+            },
+            {
+              "name": "EPE",
+              "phone": "09010511377"
+            },
+            {
+              "name": "OGOMBO",
+              "phone": "09010511378"
+            },
+            {
+              "name": "ILASAN",
+              "phone": "09010511379"
+            },
+            {
+              "name": "ELEMORO",
+              "phone": "09010511380"
+            },
+            {
+              "name": "LANGBASA",
+              "phone": "09010511381"
+            },
+            {
+              "name": "AKODO",
+              "phone": "09010511382"
+            },
+            {
+              "name": "AJAH",
+              "phone": "09010511383"
+            },
+            {
+              "name": "ODO-NOFORIJA",
+              "phone": "09010511384"
+            },
+            {
+              "name": "LEKKI FREE ZONE",
+              "phone": "09010511385"
+            }
           ]
-       },
-       {
-          "state": "delta",
-          "phones": [
-             "08036684974"
+        },
+        {
+          "name": "COMMANDER 'K' MOROGBO",
+          "phone": "09010511386",
+          "divisions": [
+            {
+              "name": "ISHASHI",
+              "phone": "09010511387"
+            },
+            {
+              "name": "ILEMBA-HAUSA",
+              "phone": "09010511388"
+            },
+            {
+              "name": "BADAGRY",
+              "phone": "09010511389"
+            },
+            {
+              "name": "IJANIKIN",
+              "phone": "09010511390"
+            },
+            {
+              "name": "MOROGBO",
+              "phone": "09010511392"
+            }
           ]
-       },
-       {
-          "state": "ebonyi",
-          "phones": [
-             "08068075581",
-             "08036971667",
-             "08123823322"
+        },
+        {
+          "name": "COMMANDER 'L' ILASE",
+          "phone": "09010511393",
+          "divisions": [
+            {
+              "name": "IBESHE",
+              "phone": "09010511394"
+            },
+            {
+              "name": "OSOLU-KINGDOM",
+              "phone": "09010511395"
+            },
+            {
+              "name": "IGBOLOGUN",
+              "phone": "09010511396"
+            },
+            {
+              "name": "TAKWA-BAY",
+              "phone": "09010511397"
+            },
+            {
+              "name": "ILASHE",
+              "phone": "09010511398"
+            }
           ]
-       },
-       {
-          "state": "edo",
-          "phones": [
-             "08037646272",
-             "08077773721",
-             "08067551618"
+        },
+        {
+          "name": "COMMANDER 'M' IDIMU",
+          "phone": "09010511399",
+          "divisions": [
+            {
+              "name": "IKOTUN",
+              "phone": "09010511400"
+            },
+            {
+              "name": "IDIMU",
+              "phone": "09010511401"
+            },
+            {
+              "name": "GOWON-ESTATE",
+              "phone": "09010511402"
+            },
+            {
+              "name": "IGANDO",
+              "phone": "09010511403"
+            },
+            {
+              "name": "ISHERI-OSHUN",
+              "phone": "09010511404"
+            },
+            {
+              "name": "SHASHA",
+              "phone": "09010511405"
+            }
           ]
-       },
-       {
-          "state": "ekiti",
-          "phones": [
-             "08062335577",
-             "07089310359"
+        },
+        {
+          "name": "COMMANDER 'N' IJEDE",
+          "phone": "09010511406",
+          "divisions": [
+            {
+              "name": "AGBOWA",
+              "phone": "09010511407"
+            },
+            {
+              "name": "OWODE-ONIRIN",
+              "phone": "09010511408"
+            },
+            {
+              "name": "SHAGAMU RD",
+              "phone": "09010511409"
+            },
+            {
+              "name": "OWUTU",
+              "phone": "09010511410"
+            },
+            {
+              "name": "IPAKODO",
+              "phone": "09010511411"
+            },
+            {
+              "name": "IKORODU",
+              "phone": "09010511412"
+            },
+            {
+              "name": "IMOTA",
+              "phone": "09010511413"
+            },
+            {
+              "name": "IJEDE",
+              "phone": "09010511414"
+            },
+            {
+              "name": "KETU-EREYUN",
+              "phone": "09010511415"
+            }
           ]
-       },
-       {
-          "state": "enugu",
-          "phones": [
-             "08032003702",
-             "08075390883",
-             "08086671202"
+        },
+        {
+          "name": "COMMANDER 'P' ALAGBADO",
+          "phone": "09010511416",
+          "divisions": [
+            {
+              "name": "OKE-ODO",
+              "phone": "09010511417"
+            },
+            {
+              "name": "ALAGBADO",
+              "phone": "09010511418"
+            },
+            {
+              "name": "IPAJA",
+              "phone": "09010511419"
+            },
+            {
+              "name": "MERIAN",
+              "phone": "09010511420"
+            }
           ]
-       },
-       {
-          "state": "imo",
-          "phones": [
-             "08034773600",
-             "08037037283"
-          ]
-       },
-       {
-          "state": "jigawa",
-          "phones": [
-             "08075391069",
-             "07089846285",
-             "08123821598"
-          ]
-       },
-       {
-          "state": "kaduna",
-          "phones": [
-             "08123822284"
-          ]
-       },
-       {
-          "state": "kano",
-          "phones": [
-             "08032419754",
-             "08123821575",
-             "08064977004",
-             "08064977005"
-          ]
-       },
-       {
-          "state": "katsina",
-          "phones": [
-             "08075391255",
-             "08075391250"
-          ]
-       },
-       {
-          "state": "kebbi",
-          "phones": [
-             "08038797644",
-             "08075391307"
-          ]
-       },
-       {
-          "state": "kogi",
-          "phones": [
-             "08075391335",
-             "07038329084"
-          ]
-       },
-       {
-          "state": "kwara",
-          "phones": [
-             "07032069501",
-             "08125275046"
-          ]
-       },
-       {
-          "state": "lagos",
-          "phones": [
-             "07055462708",
-             "08035963919"
-          ]
-       },
-       {
-          "state": "nassarawa",
-          "phones": [
-             "08123821571"
-          ]
-       },
-       {
-          "state": "niger",
-          "phones": [
-             "08081777498"
-          ]
-       },
-       {
-          "state": "ogun",
-          "phones": [
-             "08032136765",
-             "08081770416"
-          ]
-       },
-       {
-          "state": "ondo",
-          "phones": [
-             "07034313903",
-             "08075391808"
-          ]
-       },
-       {
-          "state": "osun",
-          "phones": [
-             "08075872433",
-             "08039537995",
-             "08123823981"
-          ]
-       },
-       {
-          "state": "oyo",
-          "phones": [
-             "08081768614",
-             "08150777888"
-          ]
-       },
-       {
-          "state": "plateau",
-          "phones": [
-             "08126375938",
-             "08075391844",
-             "08038907662"
-          ]
-       },
-       {
-          "state": "rivers",
-          "phones": [
-             "08032003514",
-             "08073777717"
-          ]
-       },
-       {
-          "state": "sokoto",
-          "phones": [
-             "07068848035",
-             "08075391943"
-          ]
-       },
-       {
-          "state": "taraba",
-          "phones": [
-             "08140089863",
-             "08073260267"
-          ]
-       },
-       {
-          "state": "yobe",
-          "phones": [
-             "07039301585",
-             "08035067570"
-          ]
-       },
-       {
-          "state": "zamfara",
-          "phones": [
-             "08106580123"
-          ]
-       },
-       {
-          "state": "FCT (Abuja)",
-          "phones": [
-             "07057337653",
-             "08061581938",
-             "08032003913"
-          ]
-       }
-    ]
- }
+        }
+      ],
+      "commandControlRooms": [
+        {
+          "name": "COMMAND 1",
+          "phone": "09010512285"
+        },
+        {
+          "name": "COMMAND 2",
+          "phone": "09105122863"
+        },
+        {
+          "name": "COMMAND 3",
+          "phone": "09010512287"
+        },
+        {
+          "name": "COMMAND 4",
+          "phone": "09010512288"
+        }
+      ]
+    },
+    {
+      "state": "nassarawa",
+      "phones": ["08123821571"]
+    },
+    {
+      "state": "niger",
+      "phones": ["08081777498"]
+    },
+    {
+      "state": "ogun",
+      "phones": ["08032136765", "08081770416"]
+    },
+    {
+      "state": "ondo",
+      "phones": ["07034313903", "08075391808"]
+    },
+    {
+      "state": "osun",
+      "phones": ["08075872433", "08039537995", "08123823981"]
+    },
+    {
+      "state": "oyo",
+      "phones": ["08081768614", "08150777888"]
+    },
+    {
+      "state": "plateau",
+      "phones": ["08126375938", "08075391844", "08038907662"]
+    },
+    {
+      "state": "rivers",
+      "phones": ["08032003514", "08073777717"]
+    },
+    {
+      "state": "sokoto",
+      "phones": ["07068848035", "08075391943"]
+    },
+    {
+      "state": "taraba",
+      "phones": ["08140089863", "08073260267"]
+    },
+    {
+      "state": "yobe",
+      "phones": ["07039301585", "08035067570"]
+    },
+    {
+      "state": "zamfara",
+      "phones": ["08106580123"]
+    },
+    {
+      "state": "FCT (Abuja)",
+      "phones": ["07057337653", "08061581938", "08032003913"]
+    }
+  ]
+}
